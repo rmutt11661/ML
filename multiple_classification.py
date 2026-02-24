@@ -12,8 +12,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
  
 #load model
-loan_model = pickle.load(open('C:/Users/Lab/Desktop/ml/loan_model.sav','rb'))
-ridingmower_model = pickle.load(open('C:/Users/Lab/Desktop/ML/RidingMowers_model.sav','rb'))
+loan_model = pickle.load(open('loan_model.sav','rb'))
+ridingmower_model = pickle.load(open('RidingMowers_model.sav','rb'))
  
 with st.sidebar:
     selected = option_menu(
